@@ -1,0 +1,43 @@
+@import "./vars";
+@import "./fonts";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: $color-dark;
+  margin: 0;
+  height: 5000px;
+  &.modal-opened {
+    overflow: hidden;
+    margin-right: 15px;
+  }
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin: 0;
+  margin-bottom: 1em;
+}
+p {
+  margin: 0;
+}
+
+.app-button {
+  width: 100%;
+  max-width: 320px;
+  padding: 0.5em;
+  font-size: 1.2em;
+}
+@import "./components/index.scss";

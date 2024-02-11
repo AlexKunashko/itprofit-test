@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="./dist/bundle.css" />
+    <title>Test KunashkoAV</title>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+</head>
+
+<body>
+    <main>
+        <form action="" id="myForm" class="form">
+            <div class="form__field">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name">
+                <div class="form__field-error"></div>
+            </div>
+            <div class="form__field">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+                <div class="form__field-error"></div>
+            </div>
+
+            <div class="form__field">
+                <label for="phone">Телефон:</label>
+                <input type="text" id="phone" name="phone">
+                <div class="form__field-error"></div>
+            </div>
+
+            <div class="form__field">
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <div class="form__field-error"></div>
+            </div>
+
+            <button type="submit" class="app-button">Отправить</button>
+            <div class="form__success" id="successMessage"></div>
+        </form>
+        <div class="modal closed">
+            <div class="modal-overlay"></div>
+            <div class="modal-dialog">
+                <button class="modal__close">X</button>
+                <h2>Модальное окно</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum dolor corporis nesciunt? Minima
+                    nesciunt
+                    nemo atque sunt adipisci non placeat?</p>
+            </div>
+        </div>
+        <button class="app-button modal-open">Модальное окно</button>
+    </main>
+    <script src="./dist/bundle.js"></script>
+</body>
+
+</html>
